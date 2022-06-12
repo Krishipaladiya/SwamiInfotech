@@ -53,10 +53,10 @@
     </div>
 
     <!-- header -->
-    <header id="navbar">
+    <header id="navbar" class="headerSticky">
         <nav class="navbar navbar-expand-lg navbar-light navitem-cs">
             <div class="container-fluid flex-wrap">
-                <a class="navbar-brand HomeSlider" href="javascript:void(0)">
+                <a class="navbar-brand" href="javascript:void(0)">
                     <img src="images/Logo-Dark@2x.png" alt="logo" class="w-100 d-block">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -68,6 +68,15 @@
                 <div class="collapse navbar-collapse flex-wrap" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto me-xl-auto  mb-2 mb-lg-0 align-items-lg-center mx-auto menubar-items">
                         <li class="nav-item">
+                            <a class="nav-link HomeSlider" aria-current="page" >Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link OurService" href="#OurService">Our Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link AboutUs" href="#AboutUs">About Us</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link " aria-current="page" href="#MeetOurTeam">Meet our team</a>
                         </li>
                         <li class="nav-item">
@@ -78,43 +87,45 @@
                         </li>
 
                         <!--<li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button"
-                               data-bs-toggle="dropdown" aria-expanded="false">
-                                Services
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="javascript:void(0)">Services</a></li>
-                                <li>
-                                    <hr class="dropdown-divider d-none d-lg-block">
-                                </li>
-                                <li><a class="dropdown-item" href="javascript:void(0)">Service Details</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">News</a>
-                        </li>
-                        <li class="nav-item dropdown m-0">
-                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button"
-                               data-bs-toggle="dropdown" aria-expanded="false">
-                                Page
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="javascript:void(0)">Faq</a></li>
-                                <li>
-                                    <hr class="dropdown-divider d-none d-lg-block">
-                                </li>
-                                <li><a class="dropdown-item" href="javascript:void(0)">Gallery</a></li>
-                                <li>
-                                    <hr class="dropdown-divider d-none d-lg-block">
-                                </li>
-                                <li><a class="dropdown-item" href="javascript:void(0)">Doctor</a></li>
-                                <li>
-                                    <hr class="dropdown-divider d-none d-lg-block">
-                                </li>
-                                <li><a class="dropdown-item" href="javascript:void(0)">Contact</a></li>
-                            </ul>
-                        </li>-->
+        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button"
+           data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="javascript:void(0)">Services</a></li>
+            <li>
+                <hr class="dropdown-divider d-none d-lg-block">
+            </li>
+            <li><a class="dropdown-item" href="javascript:void(0)">Service Details</a></li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="javascript:void(0)">News</a>
+    </li>
+    <li class="nav-item dropdown m-0">
+        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button"
+           data-bs-toggle="dropdown" aria-expanded="false">
+            Page
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="javascript:void(0)">Faq</a></li>
+            <li>
+                <hr class="dropdown-divider d-none d-lg-block">
+            </li>
+            <li><a class="dropdown-item" href="javascript:void(0)">Gallery</a></li>
+            <li>
+                <hr class="dropdown-divider d-none d-lg-block">
+            </li>
+            <li><a class="dropdown-item" href="javascript:void(0)">Doctor</a></li>
+            <li>
+                <hr class="dropdown-divider d-none d-lg-block">
+            </li>
+            <li><a class="dropdown-item" href="javascript:void(0)">Contact</a></li>
+        </ul>
+    </li>-->
                     </ul>
+                    <div class="hiddenClass " style="display:flex;">
+
                     <div class="call-us d-none d-xxl-flex flex-wrap">
                         <div class="call-us-icon text-center">
                             <i class="bi bi-telephone-fill text-primary"></i>
@@ -126,6 +137,7 @@
                     </div>
                     <div class=" contact-us btn d-none d-xl-block ms-3">
                         <a href="javascript:void(0)">Contact Us</a>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -198,7 +210,7 @@
     </section>
 
 
-    <section class=" mx-auto mt-5">
+    <section class=" mx-auto mt-5" id="OurService">
 
 
         <section class=" services-section" id="services">
@@ -220,9 +232,10 @@
                     <div class="col-sm-6 col-lg-4">
                         <div class="feature-box-1">
                             <div class="icon">
-                                <i class="fa fa-desktop"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30px" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="white" d="M528 0h-480C21.5 0 0 21.5 0 48v320C0 394.5 21.5 416 48 416h192L224 464H152C138.8 464 128 474.8 128 488S138.8 512 152 512h272c13.25 0 24-10.75 24-24s-10.75-24-24-24H352L336 416h192c26.5 0 48-21.5 48-48v-320C576 21.5 554.5 0 528 0zM512 288H64V64h448V288z" /></svg>
                             </div>
                             <div class="feature-content">
+                                <i class="fa-solid fa-desktop"></i>
                                 <h5>Unique design</h5>
                                 <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
                             </div>
@@ -324,9 +337,9 @@
                             <p class="card-text m-0 col-12">
                                 To help clients achieve their business objectives providing by our best IT solutions and services. Earn trust of clients and be a globally respected company.
                             </p>
-                            <div class="btn d-block col-12">
+                            <!--<div class="btn d-block col-12">
                                 <a href="javascript:void(0)">Read More <i class="fas fa-arrow-right"></i></a>
-                            </div>
+                            </div>-->
                         </div>
 
                     </div>
@@ -351,9 +364,9 @@
                             <p class="card-text m-0 col-12">
                                 Since 2017, Shopno Ecommerce has developed software applications that really work for our clients, launching their startups, or making business easier and profitable.
                             </p>
-                            <div class="btn d-block col-12">
+                            <!--<div class="btn d-block col-12">
                                 <a href="javascript:void(0)">Read More <i class="fas fa-arrow-right"></i></a>
-                            </div>
+                            </div>-->
                         </div>
 
                     </div>
@@ -363,7 +376,7 @@
     </section>
 
     <!-- About -->
-    <section class="about">
+    <section class="about" id="AboutUs">
         <div class="container bg-white">
             <div class="row align-items-center">
                 <div class="col-12 col-lg-6">
@@ -1209,31 +1222,27 @@
                 }
             });
         });
-        // When the user scrolls down 20px from the top of the document, slide down the navbar
-        window.onscroll = function () { scrollFunction() };
-        function scrollFunction() {
-            debugger;
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                document.getElementById("navbar").style.top = "0";
-                document.getElementById("navbar").style.position = "sticky";
-                document.getElementById("navbar").style.zIndex = "111111111111";
-                document.getElementById("navbar").style.backgroundColor = "white";
-                $("header .call-us").removeClass(" d-xxl-flex");
-                $("header .contact-us").removeClass("d-xl-block");
-                $(".navitem-cs").addClass("pad-0");
-            } else if (document.body.scrollTop >= 0 || document.documentElement.scrollTop >= 0) {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-                $("header .call-us").addClass(" d-xxl-flex");
-                $("header .contact-us").addClass("d-xl-block");
-                $(".navitem-cs").removeClass("pad-0");
-            }
-        }
-
-        
         $(".HomeSlider").on("click", function () {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
+        });
+        $(window).scroll(function () {
+                scroll = $(window).scrollTop();
+             if (scroll >= 150) {
+            
+                    $(".navitem-cs").css("height", "80px");
+                    $("header .hiddenClass").css("display", "none");
+                    $(".navitem-cs").addClass("pad-0");
+            }
+          
+        });
+        $(window).scroll(function () {
+            scroll = $(window).scrollTop();
+            if (scroll == 0) {
+                $(".navitem-cs").css("height", "137px");
+                $("header .hiddenClass").css("display", "flex");
+                $(".navitem-cs").removeClass("pad-0");
+            }
         });
     </script>
    

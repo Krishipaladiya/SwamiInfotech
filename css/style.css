@@ -4,6 +4,23 @@
     --bs-dark: #565872;
     --bs-light: #F8F8F8;
 }
+
+
+
+.headerSticky {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 111111111111 !important;
+    background-color: white !important;
+}
+
+
+
+
+
+
+
+
 .bg-primary{
     background-color: var(--bs-primary) !important;
 }
@@ -1078,3 +1095,19 @@ footer .date{
         border-left: 5px solid #fc5356;
         padding-left: 15px;
     }
+@media (max-width: 1440px) {
+    header .navbar-brand {
+        flex-basis: 165px;
+    }
+}
+@media (max-width: 1024px) {
+    header .navbar-brand {
+        flex-basis: 122px;
+    }
+}
+#AboutUs{
+    padding-top:165px;
+}
+ #OurService {
+    padding-top: 100px;
+}
